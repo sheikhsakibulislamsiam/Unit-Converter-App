@@ -25,7 +25,10 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Login"), centerTitle: true),
+      appBar: AppBar(
+        title: const Text("Login"),
+        centerTitle: true,
+      ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
@@ -56,7 +59,9 @@ class LoginPage extends StatelessWidget {
                     ),
                     const SizedBox(height: 24),
                     ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        
+                      },
                       child: const Text("Login"),
                     ),
                     TextButton(
@@ -69,26 +74,28 @@ class LoginPage extends StatelessWidget {
                         );
                       },
                       child: const Text("Don’t have an account? Register"),
-                    ),
+                    )
                   ],
                 ),
               ),
-            ),
+            )
           ],
         ),
       ),
     );
   }
 }
-
-// REGISTRATION PAGE
+// REGISTRATION PAGE 
 class RegistrationPage extends StatelessWidget {
   const RegistrationPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Register"), centerTitle: true),
+      appBar: AppBar(
+        title: const Text("Register"),
+        centerTitle: true,
+      ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: SingleChildScrollView(
@@ -145,7 +152,7 @@ class RegistrationPage extends StatelessWidget {
                           Navigator.pop(context);
                         },
                         child: const Text("Already have an account? Login"),
-                      ),
+                      )
                     ],
                   ),
                 ),
